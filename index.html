@@ -125,12 +125,12 @@ body{font-family:"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg)
 
 <script>
 var QUESTIONS=[
-  {dim:"S1 · 自尊自信",q:"商赛路演现场，评委当众质疑你的方案，说「这个想法太天真了」。你的内心：",opts:[{l:"A",t:"完了完了完了…我在台上快石化了…",s:1},{l:"B",t:"有点尴尬，但我先记下来，下来再复盘",s:2},{l:"C",t:"谢谢评委，这正好逼我想得更周全",s:3}]},
+  {dim:"S1 · 自尊自信",q:"商赛路演现场，评委当众质疑你的方案，说「这个想法太天真了」。你的内心：",opts:[{l:"A",t:"完了完了完了…我在台上快石化了…",s:1},{l:"B",t:"有点尴尬，但我先记下来，下来再复盘",s:2},{l:"C",t:"谢谢评委，这正好让我想得更周全",s:3}]},
   {dim:"S1 · 自尊自信",q:"组队时，你的队友全是名校大神，你会：",opts:[{l:"A",t:"我是不是来凑数的…算了少说话多干活",s:1},{l:"B",t:"每个人都有自己的位置",s:2},{l:"C",t:"强强联手，正好我也有一套想法",s:3}]},
   {dim:"S2 · 自我清晰度",q:"你非常清楚自己在商业模拟中最擅长什么：",opts:[{l:"A",t:"其实我也挺模糊的，还在摸索",s:1},{l:"B",t:"大概有个方向，不是很确定",s:2},{l:"C",t:"我的核心优势在哪里，我非常清楚",s:3}]},
   {dim:"S2 · 自我清晰度",q:"你有一个真正想追求的商业方向或创业想法：",opts:[{l:"A",t:"说实话，我还没想清楚",s:1},{l:"B",t:"也许有，也许没有",s:2},{l:"C",t:"有，而且我已经在观察和研究了",s:3}]},
   {dim:"S3 · 核心价值",q:"「参加商赛，就是为了赢、为了证明自己是最强的」：",opts:[{l:"A",t:"我不是",s:1},{l:"B",t:"不完全是，但我也不想输",s:2},{l:"C",t:"没错，这就是我来的原因",s:3}]},
-  {dim:"S3 · 核心价值",q:"别人怎么看你的商业决策，对你来说重要吗？",opts:[{l:"A",t:"非常重要，我会在意每个人的评价",s:1},{l:"B",t:"有些人很重要，有些无所谓",s:2},{l:"C",t:"吊毛无所吊谓，我只看我认定的方向",s:3}]},
+  {dim:"S3 · 核心价值",q:"别人怎么看你的商业决策，对你来说重要吗？",opts:[{l:"A",t:"非常重要，我会在意每个人的评价",s:1},{l:"B",t:"有些人很重要，有些无所谓",s:2},{l:"C",t:"无所谓，我只看我认定的方向",s:3}]},
   {dim:"E1 · 依恋安全感",q:"你的队友在群里突然不说话了，已读不回超过12小时。你第一时间会想：",opts:[{l:"A",t:"是不是我之前说错话了，他不想跟我合作了",s:1},{l:"B",t:"在想要不要私信问一下",s:2},{l:"C",t:"可能在忙吧，我做我自己的部分",s:3}]},
   {dim:"E1 · 依恋安全感",q:"在团队合作中，你是否经常担心被队友排斥或取代：",opts:[{l:"A",t:"是的，我经常有这种感觉",s:1},{l:"B",t:"偶尔会，尤其刚组队时",s:2},{l:"C",t:"不会，我相信自己的价值",s:3}]},
   {dim:"E2 · 情感投入度",q:"你对待团队和比赛的态度是：",opts:[{l:"A",t:"就是个比赛嘛，没必要太当真",s:1},{l:"B",t:"认真对待，但也别太上头",s:2},{l:"C",t:"全力以赴，每一场都当成真实的战役",s:3}]},
@@ -301,7 +301,7 @@ function showResult() {
     'ATM-er':['H','H','H','H','H','M','H','H','H','H','M','H','M','H','L'],
     SEXY:['H','M','H','H','H','L','H','M','M','H','M','M','H','L','H'],
     'LOVE-R':['M','L','H','L','H','L','H','L','H','M','L','M','M','L','H'],
-    POOR:['H','H','L','M','L','H','H','H','H','L','H','L'],
+    POOR:['H','H','L','M','L','H','H','H','H','H','H','H','L','H','L'],
     'DIOR-S':['M','H','M','M','M','H','M','H','M','H','M','H','L','H','L'],
     SHIT:['H','H','L','H','L','H','L','M','M','H','H','M','L','H','H'],
     'WOC!':['H','H','L','H','M','H','M','M','H','H','H','M','L','H','H'],
@@ -309,7 +309,7 @@ function showResult() {
     'OH-NO':['H','H','L','L','M','H','L','H','H','H','H','M','L','H','L'],
     MUM:['M','M','H','M','H','L','H','M','M','L','M','M','H','L','L'],
     'JOKE-R':['L','L','H','L','H','L','L','M','L','L','L','L','M','L','M'],
-    MONK:['H','H','L','L','L','H','L','L','M','M','P','L','H','L','M'],
+    MONK:['H','H','L','L','L','H','L','L','M','M','M','L','H','L','M'],
     OJBK:['M','M','H','M','M','M','H','M','L','L','M','M','M','L','L'],
     'THAN-K':['M','H','M','H','M','M','H','H','M','M','M','H','M','H','L'],
     FAKE:['H','L','M','M','M','L','M','L','M','M','L','M','H','L','H'],
@@ -331,7 +331,7 @@ function showResult() {
     'ATM-er':['H','H','H','H','H','M','H','H','H','H','M','H','M','H','L'],
     SEXY:['H','M','H','H','H','L','H','M','M','H','M','M','H','L','H'],
     'LOVE-R':['M','L','H','L','H','L','H','L','H','M','L','M','M','L','H'],
-    POOR:['H','H','L','M','L','H','H','H','H','L','H','L'],
+    POOR:['H','H','L','M','L','H','H','H','H','H','H','H','L','H','L'],
     'DIOR-S':['M','H','M','M','M','H','M','H','M','H','M','H','L','H','L'],
     SHIT:['H','H','L','H','L','H','L','M','M','H','H','M','L','H','H'],
     'WOC!':['H','H','L','H','M','H','M','M','H','H','H','M','L','H','H'],
@@ -352,8 +352,7 @@ function showResult() {
     HHHH:['H','H','H','H','H','H','H','H','H','H','H','H','H','H','H']
   };
 
-  // 修正 POOR 模式 (12维问题)
-  PATTERNS.POOR = ['H','H','L','M','L','H','H','H','H','L','H','L','H','H','L'];
+  // POOR already corrected above
 
   Object.keys(PATTERNS).forEach(function(key) {
     var pat = PATTERNS[key];
@@ -369,7 +368,7 @@ function showResult() {
   });
 
   // 低于60%触发HHHH兜底
-  var finalKey = bestSim < 60 ? 'HHHH' : bestKey;
+  var finalKey = bestSim < 30 ? 'HHHH' : bestKey;
   if (bestSim < 60) bestSim = bestSim; // 兜底不显示真实sim
 
   var p = PERSONALITIES[finalKey];
@@ -393,7 +392,7 @@ function showResult() {
   var tagsHtml = p.tags.map(function(t) { return '<span class="tag">'+t+'</span>'; }).join('');
   if (finalKey === 'HHHH') tagsHtml += '<span class="tag gold">兜底人格</span>';
 
-  var simDisplay = finalKey === 'HHHH' ? '低于60%（触发兜底）' : bestSim + '%';
+  var simDisplay = finalKey === 'HHHH' ? bestSim + '%（极罕见组合）' : bestSim + '%';
 
   rs.innerHTML = 
     '<div class="result-card">' +
@@ -410,7 +409,7 @@ function showResult() {
       '</div>' +
       '<div class="result-section">' +
         '<h3>你的商赛优势位置</h3>' +
-        '<div class="result-pos">'+p.pos+'</div>' +
+        '<div class="result-pos">适合位置：'+p.pos+'</div>' +
         '<div class="result-buddy">💡 组队建议：'+p.buddy+'</div>' +
       '</div>' +
       '<div class="result-section">' +
